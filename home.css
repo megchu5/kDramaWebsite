@@ -1,0 +1,166 @@
+body{
+    background-color:#545454;
+    font-family: 'Comfortaa', cursive;
+    color:white;
+}
+
+h4 {
+    background-color: black;
+    color: white;
+}
+
+/*Header*/
+#header {
+    padding: .25em;;
+    background-color: #a31313;
+    font-size: 50px;
+}
+
+h1 {
+    font-size: 45px;
+    margin-bottom: 0px;
+}
+
+h2{
+    font-size:40px;
+    margin:0px;
+    padding: .5em;
+}
+
+#logo {
+    float:right;
+    position: absolute;
+    right: 25%;
+    top: 5%;
+
+}
+
+h1, h2 {
+    margin-left: 20%;
+    margin-right:20%; 
+    text-align: center;
+}
+
+/* Side navigation bar*/
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  display:inline-block;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/*Description Text*/
+#description {
+    background-color:#545454;
+    font: size 10px;
+    padding: 1em;
+}
+
+footer{
+    font-size: 8px;
+}
+
+/*Information Container*/
+.info{
+    padding: 10px 40px 40px;
+    display: flex;
+    max-width: 1200px;
+}
+.info_img {
+    margin: 20px 30px 0 0;
+    width: 200px;
+    -o-object-fit: contain;
+    object-fit: contain;
+    align-self: flex-start;
+}
+.info_txt {
+    flex: 1 1 auto;
+    font-size: 1em;
+}
+.info h10{
+    flex: 1 1 auto;
+    font-size: 18pt;
+    font-weight: bold;
+    color:#111;
+}
+
+.info hr{
+    border-top: 1px solid #e9c545;
+    border-bottom: 1px solid #e9c545;
+}
+
+.info form{
+    margin-left: 0px;
+}
+
+.info form textarea{
+    background-color: rgb(182, 177, 177);
+    font-family:'Times New Roman', Times, serif;
+}
+.info form input{
+    background-color: #a31313;
+    color:white;
+    align-content: center;
+    border: none;
+    padding: 10px 25px;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.info form input:hover {
+    background-color:gainsboro;
+    color: black;
+  }
+
+
+/*Movies*/
+h4 {
+    font-size: 30px;
+    padding: 0.25em;
+}
+
+.movies {
+    text-align: center;
+    width: 98%;
+    object-fit: cover;
+}
+.movies img{
+    margin:20px;
+    display:inline-block;
+}
+
+
+#title {
+    background-color:#545454;
+    font-size:50px;
+    font-weight: bold;
+    margin-left: 40px;
+}
+
