@@ -156,7 +156,6 @@ h4 {
     display:inline-block;
 }
 
-
 #title {
     background-color:#545454;
     font-size:50px;
@@ -164,3 +163,19 @@ h4 {
     margin-left: 40px;
 }
 
+/*hovering*/
+.movies img:hover{
+    opacity: 0.3;
+    transition: .5s ease;
+}
+
+/*home page links*/
+#header a {
+    text-decoration: none;
+    color:white;
+}
+
+#header a:visited {
+    text-decoration: none;
+    color:white; 
+}
