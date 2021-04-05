@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<title>Itaewon Class</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Itaewon Class Info Page">
+	<meta name="author" content="Jennifer Tang">
+	<link href="info_pages.css" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+</head> 
+
+<body>
+    <!-- Header -->
+    <div id = 'header'> 
+        <img id = 'logo' src="../logo.png" alt="Logo", width = 100>
+        <h1>Soondu Koreaboo</h1>
+        <h2>Dramas</h2>
+    </div>
+    
+<div id = 'content'>
+   
+    <!-- Sidebar -->
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="../home.html">Home</a>
+        <a href="../quiz.html">Quiz</a>
+        <a href="../dramas.html">Dramas</a>
+        <a href="../actors.html">Actors</a>
+        <a href="../surprise.html">Surprise Me!</a>
+        <a href="../contact.html">Contact Us</a>
+    </div>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    
+    <!-- Body -->
+    
+    <div id = 'left_body'>
+        <p style="font-size:50px; font-weight:bold; margin:10px">Itaewon Class &starf;&starf;&starf;&starf;&starf;</p>
+
+        <!--Star rating system - need to configure-->
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/NNP8m3gaaFE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <div id = 'right_body'>
+        <h3>Synopsis</h3>
+        After punching and refusing to apologize to the son of Jangga Group, Park Saeroyi gets expelled from school. After his father gets killed by the Jangga heir, Park Saeroyi gets jailed for attempting to kill Jang Geunwon. Saeroyi serves his sentence and leaves determined to take revenge on Jangga Group by starting a pub of his own.
+
+        <h3>Where to Watch</h3>
+        Only on <a href="https://www.netflix.com/title/81193309#:~:text=2020%20%7C%20TV%2DMA%20%7C%201,Kim%20Seong%2Dyun%2C%20Gwang%20Jin">Netflix</a>!<br>
+    </div>
+
+    <h4 style="clear:both">Main Actors</h4>
+
+    <div id = 'actors'>
+        <figure>
+            <img src="Actor_pics/parkseojun.jpg" alt="Park Seojun">
+            <figcaption>Park Seojun as Park Saeroyi</figcaption>
+        </figure>
+
+        <figure>
+            <img src="Actor_pics/kimdami.jpg" alt="Kim Dami">
+            <figcaption>Kim Dami as Jo Yiseo</figcaption>
+        </figure>
+
+        <figure>
+            <img src="Actor_pics/yoojaemyung.jpg" alt="Yoo Jaemyung">
+            <figcaption>Yoo Jaemyung as Jang Daehee</figcaption>
+        </figure>
+
+        <figure>
+            <img src="Actor_pics/kwonnara.jpg" alt="Kwon Nara">
+            <figcaption>Kwon Nara as Oh Sooah</figcaption>
+        </figure>
+    </div>
+    
+    <footer>
+        <hr style="color:#333;border-top:1px;clear:both">
+        <h11>Last Updated: 3/30/2020 by Megan Chu, Jennifer Tang, Kelly Wang, and Laurence Wang</h11>
+    </footer>
+
+</div>
+
+<!-- Sidebar Implementation -->
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("content").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("content").style.marginLeft= "0";
+}
+</script>
+
+</body>
+</html>
