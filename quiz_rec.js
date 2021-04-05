@@ -117,12 +117,13 @@ function compare_points() {
 // returns a random integer between min and max, 
 // exclusive of max but inclusive of min
 function rand_num(min, max) {
-    min = Math.ceil(min)
-    max = Math.floor(max)
-
     if (min == max) {
         return min
     }
+
+    min = Math.ceil(min)
+    max = Math.floor(max)
+
     num = Math.random() * (max - min) + min
 
     return Math.floor(num)
@@ -138,16 +139,17 @@ function recommend() {
         rec = dramas[0][rand_num(0, dramas[0].length)]
     }
     else if (highest == 'comedy') {
-        rec = dramas[1][rand_num(1, dramas[1].length)]
+        rec = dramas[1][rand_num(0, dramas[1].length)]
     }
     else if (highest == 'action') {
-        rec = dramas[2][rand_num(2, dramas[2].length)]
+        rec = dramas[2][rand_num(0, dramas[2].length)]
     }
     else {
-        rec = dramas[3][rand_num(3, dramas[3].length)]
+        rec = dramas[3][rand_num(0, dramas[3].length)]
     }
 
     // open the drama info page in a new window
     rec_page = "Info_pages/" + rec + "_info.html"
+    alert('Opening to ' + rec)
     window.open(rec_page)
 }
