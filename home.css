@@ -16,6 +16,11 @@ h4 {
     font-size: 50px;
 }
 
+#header a {
+    color: white;
+    text-decoration: none;
+}
+
 h1 {
     font-size: 45px;
     margin-bottom: 0px;
@@ -156,6 +161,7 @@ h4 {
     display:inline-block;
 }
 
+
 #title {
     background-color:#545454;
     font-size:50px;
@@ -163,55 +169,17 @@ h4 {
     margin-left: 40px;
 }
 
-/*hovering*/
-.movies img:hover{
-    opacity: 0.3;
-    transition: .5s ease;
+.button {
+    transition-duration: 0.2s;
+    background-color: darkgray;
+    color: white;
+    width: 15%;
+    padding: 10px;
+    border-radius: 20px;
+    font-family: inherit;
 }
 
-/*home page links*/
-#header a {
-    text-decoration: none;
-    color:white;
-}
-
-#header a:visited {
-    text-decoration: none;
-    color:white; 
-}
-
-
-/* Actors */
-figure {
-    width: 165px;
-    display:inline-block;
-}
-
-figure img {
-    width: 160px;
-    height: 200px;
-    float:left;
-    margin-bottom: 10px;
-}
-
-figure figcaption {
-    font-size: 20px;
-    text-align: center;
-}
-
-/*style of table*/
-td{
-    width: 33%;
-    padding: .9em;
-    font-size: 15px;
-}
-
-#Dramas a{
-    text-decoration: none;
-    color:white;
-}
-
-#Dramas a:visited {
-    text-decoration: none;
-    color:white; 
+.button:hover {
+    background-color: red;
+    color: white;
 }
