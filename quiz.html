@@ -3,21 +3,22 @@
 <html lang="en">
 
 <head>
-	<title>Soondu Koreaboo Dramas</title>
+	<title>Soondu Koreaboo Dramas Quiz</title>
 	<meta charset="UTF-8">
-	<meta name="description" content="Empty page for links">
+	<meta name="description" content="What drama should I watch next?">
 	<meta name="author" content="Jennifer Tang">
 	<link href="home.css" rel="stylesheet">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+    <script src="quiz_rec.js"></script>
 </head> 
 
 <body>
     <!-- Header -->
     <div id = 'header'> 
-        <a href="home.html"><img id = 'logo' src="logo.png" alt="Logo", width = 100></a>
-        <a href="home.html"><h1>Soondu Koreaboo</h1></a>
-        <a href="home.html"><h2>Dramas</h2></a>
+        <a href="home.html"><img id = 'logo' src="logo.png" alt="Logo", width = 100>
+        <h1>Soondu Koreaboo</h1>
+        <h2>Dramas</h2></a>
     </div>
     
 <div id = 'content'>
@@ -36,12 +37,83 @@
     <!-- Description -->
     
     <div id = 'description'>
-        <h3>This is where the quiz page will be.</h3>    
+        <span style='font-size:40px; font-weight:bonder'>What should I watch next?</span><br><br>
+    
+        Answer these questions to find out your personalized K-drama recommendation!
     </div>
+
+    <form>
+        <div id = 'q1'>
+            <h4 style='margin-bottom:10px'>Q1. The best part of a K-drama is always...</h4>
+
+            <img style='position:relative; right:100px; float:right' width='100px' src='logo.png'>
+
+            <span>
+                <label style='margin-left:25px'><input name='ans1' type='radio' value='a'>When the main lead defeats the villain</label><br>
+                <label style='margin-left:25px'><input name='ans1' type='radio' value='b'>When the main characters fall in love with each other</label><br>
+                <label style='margin-left:25px'><input name='ans1' type='radio' value='c'>The Subway product placements</label><br>
+                <label style='margin-left:25px'><input name='ans1' type='radio' value='d'>When the second male lead gets the girl</label><br>
+                <label style='margin-left:25px'><input name='ans1' type='radio' value='e'>The plot twist at the end</label><br>
+            </span>
+        </div>
+
+        <div id = 'q2'>
+            <h4 style='margin-bottom:10px'>Q2. My favorite actors include...</h4>
+            <span>
+                <label style='margin-left:25px'><input name='ans2' type='checkbox' value='a'>Lee Minho</label><br>
+                <label style='margin-left:25px'><input name='ans2' type='checkbox' value='b'>Kim Soohyun</label><br>
+                <label style='margin-left:25px'><input name='ans2' type='checkbox' value='c'>Park Seojoon</label><br>
+                <label style='margin-left:25px'><input name='ans2' type='checkbox' value='d'>Ji Changwook</label><br>
+                <label style='margin-left:25px'><input name='ans2' type='checkbox' value='e'>None of the above</label><br>
+            </span>
+        </div>
+
+        <div id = 'q3'>
+            <h4 style='margin-bottom:10px'>Q3. My favorite actresses include...</h4>
+            <span>
+                <label style='margin-left:25px'><input name='ans3' type='checkbox' value='a'>IU</label><br>
+                <label style='margin-left:25px'><input name='ans3' type='checkbox' value='b'>Bae Suzy</label><br>
+                <label style='margin-left:25px'><input name='ans3' type='checkbox' value='c'>Park Shinhye</label><br>
+                <label style='margin-left:25px'><input name='ans3' type='checkbox' value='d'>Moon Gayoung</label><br>
+                <label style='margin-left:25px'><input name='ans3' type='checkbox' value='e'>None of the above</label><br>
+            </span>
+        </div>
+
+        <div id = 'q4'>
+            <h4 style='margin-bottom:10px'>Q4. My ideal K-drama ending involves...</h4>
+            <span>
+                <label style='margin-left:25px'><input name='ans4' type='radio' value='a'>Justice for the villains</label><br>
+                <label style='margin-left:25px'><input name='ans4' type='radio' value='b'>A romantic ending for the main leads</label><br>
+                <label style='margin-left:25px'><input name='ans4' type='radio' value='c'>I don't know. I can never finish a series.</label><br>
+                <label style='margin-left:25px'><input name='ans4' type='radio' value='d'>A satisfying storyline, even if there's no happy ending</label><br>
+                <label style='margin-left:25px'><input name='ans4' type='radio' value='e'>That moment when suddenly everything makes sense</label><br>
+            </span>
+        </div>
+
+        <div id = 'q5'>
+            <h4 style='margin-bottom:10px'>Q5. Finally, just for fun, an ideal date would be at...</h4>
+            <span>
+                <label style='margin-left:25px'><input name='ans5' type='radio' value='a'>An old, abandoned school</label><br>
+                <label style='margin-left:25px'><input name='ans5' type='radio' value='b'>The shopping mall</label><br>
+                <label style='margin-left:25px'><input name='ans5' type='radio' value='c'>An amusement park</label><br>
+                <label style='margin-left:25px'><input name='ans5' type='radio' value='d'>The park</label><br>
+                <label style='margin-left:25px'><input name='ans5' type='radio' value='e'>Somewhere far away</label><br>
+            </span>
+        </div>
+
+        <br><br>
+
+        <div style='text-align:center' id='buttons'>
+            <button class='button' onclick='quiz_submit()'>Submit</button>&nbsp;
+            <input class='button' type='reset' value='Clear'>
+        </div>
+
+        <br>
+    </form>
     
     <footer>
-        <hr style:"color=#333;border-top:1px;"">
-        <h11>Last Updated: 3/8/2020 by Megan Chu, Jennifer Tang, Kelly Wang, and Laurence Wang</h11>
+        <hr style="color:#333;border-top:1px;">
+        <h11>Last Updated: 4/3/2020 by Megan Chu, Jennifer Tang, Kelly Wang, and Laurence Wang</h11>
     </footer>
 
 </div>

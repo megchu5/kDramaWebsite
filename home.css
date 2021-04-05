@@ -16,6 +16,11 @@ h4 {
     font-size: 50px;
 }
 
+#header a {
+    color: white;
+    text-decoration: none;
+}
+
 h1 {
     font-size: 45px;
     margin-bottom: 0px;
@@ -156,6 +161,7 @@ h4 {
     display:inline-block;
 }
 
+
 #title {
     background-color:#545454;
     font-size:50px;
@@ -163,6 +169,20 @@ h4 {
     margin-left: 40px;
 }
 
+.button {
+    transition-duration: 0.2s;
+    background-color: darkgray;
+    color: white;
+    width: 15%;
+    padding: 10px;
+    border-radius: 20px;
+    font-family: inherit;
+}
+
+.button:hover {
+    background-color: red;
+    color: white;
+  
 /*hovering*/
 .movies img:hover{
     opacity: 0.3;
