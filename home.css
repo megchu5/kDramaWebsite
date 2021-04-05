@@ -182,7 +182,7 @@ h4 {
 .button:hover {
     background-color: red;
     color: white;
-  
+}
 /*hovering*/
 .movies img:hover{
     opacity: 0.3;
