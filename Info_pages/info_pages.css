@@ -190,3 +190,14 @@ figure {
     float: left;
     font-style: italic;
 }
+
+/*home page links*/
+#header a {
+    text-decoration: none;
+    color:white;
+}
+
+#header a:visited {
+    text-decoration: none;
+    color:white; 
+}
