@@ -10,14 +10,15 @@
 	<link href="info_pages.css" rel="stylesheet">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+    <script type = 'text/javascript' src = '../home.js'></script>
 </head> 
 
 <body>
     <!-- Header -->
     <div id = 'header'> 
-        <img id = 'logo' src="../logo.png" alt="Logo", width = 100>
+        <a href="../home.html"><img id = 'logo' src="../logo.png" alt="Logo", width = 100>
         <h1>Soondu Koreaboo</h1>
-        <h2>Dramas</h2>
+        <h2>Dramas</h2></a>
     </div>
     
 <div id = 'content'>
@@ -29,7 +30,7 @@
         <a href="../quiz.html">Quiz</a>
         <a href="../dramas.html">Dramas</a>
         <a href="../actors.html">Actors</a>
-        <a href="../surprise.html">Surprise Me!</a>
+        <a onclick = 'surprise()'>Surprise Me!</a>
         <a href="../contact.html">Contact Us</a>
     </div>
     <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
@@ -82,19 +83,6 @@
     </footer>
 
 </div>
-
-<!-- Sidebar Implementation -->
-<script>
-function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
-  document.getElementById("content").style.marginLeft = "250px";
-}
-
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-  document.getElementById("content").style.marginLeft= "0";
-}
-</script>
 
 </body>
 </html>
