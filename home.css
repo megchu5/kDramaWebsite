@@ -306,3 +306,8 @@ div.scrollmenu a{
     opacity: 0.3;
     transition: .5s ease;
 }
+
+/* Login */
+#login form {
+    text-align:center;
+}

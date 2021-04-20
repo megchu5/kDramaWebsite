@@ -36,11 +36,14 @@
 <div id = 'login'>
 	<form method = "POST">
 		<label for = "user">Username</label><br>
-		<input type = "text" name = "user" size = "30"><br>	
+		<input type = "text" name = "user" size = "30"><br><br>
 		<label for = "pass">Password</label><br>
-		<input type = "password" name = "pass" size = "30"><br>
-		<input type = "submit" name = "input" value = "Login" />
-		<input type = "submit" name = "input" value = "Register" />
+		<input type = "password" name = "pass" size = "30"><br><br>
+
+        <div id = 'login_buttons' style='margin-bottom: 50px'>
+            <input class = "button" style = "width:100px" type = "submit" name = "input" value = "Login" />
+            <input class = "button" style = "width:100px" type = "submit" name = "input" value = "Register" />
+        </div>
 	</form>
 
 	<?php
@@ -96,7 +99,7 @@
 
     <footer>
         <hr style="color:#333;border-top:1px;clear:both">
-        <h11>Last Updated: 4/5/2020 by Megan Chu, Jennifer Tang, Kelly Wang, and Laurence Wang</h11>
+        <h11>Last Updated: 4/19/2020 by Megan Chu, Jennifer Tang, Kelly Wang, and Laurence Wang</h11>
     </footer>
 
 </div>
