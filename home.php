@@ -15,9 +15,9 @@
 <body>
     <!-- Header -->
     <div id = 'header'> 
-        <a href="home.html"><img id = 'logo' src="logo.png" alt="Logo", width = 100></a>
-        <a href="home.html"><h1>Soondu Koreaboo</h1></a>
-        <a href="home.html"><h2>Dramas</h2></a>
+        <a href="home.php"><img id = 'logo' src="logo.png" alt="Logo", width = 100></a>
+        <a href="home.php"><h1>Soondu Koreaboo</h1></a>
+        <a href="home.php"><h2>Dramas</h2></a>
     </div>
     
 <div id = 'content'>
@@ -25,6 +25,15 @@
     <!-- Sidebar -->
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	<?php
+		if ($_COOKIE["loggedin"] != "true") {
+			echo "<a href = 'login.php'>Login/Register</a>";
+		} else {
+			setcookie("loggedin", "true", time()-(10 * 365 * 24 * 60 * 60), "/");
+			echo "<a href = 'home.php'>Logout</a>";
+		}
+	
+	?>
         <a href="quiz.html">Quiz</a>
         <a href="dramas.html">Dramas</a>
         <a href="actors.html">Actors</a>
@@ -38,7 +47,7 @@
     <div id = 'description'>
         <h3>Soondu Koreaboo is a play on the Korean soft tofu soup (soondubu) and the name for those who enjoy Korean pop culture. 
             No matter if you’ve just discovered the expansive world of K-dramas or if you’re a seasoned veteran, this 
-            site aims to hel'p you find what you should watch next! Head over to the Quiz to let us do the searching, or browse 
+            site aims to help you find what you should watch next! Head over to the Quiz to let us do the searching, or browse 
             our library of shows! Happy watching!</h3>    
     </div>
     

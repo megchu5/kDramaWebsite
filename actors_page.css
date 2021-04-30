@@ -149,8 +149,6 @@ footer{
 h4 {
     font-size: 30px;
     padding: 0.25em;
-    margin-bottom: 10px;
-    margin-top: 15px;
 }
 
 .movies{
@@ -203,13 +201,8 @@ h4 {
 figure {
     width: 165px;
     display:inline-block;
-}
-
-figure img {
-    width: 160px;
-    height: 200px;
-    /*float:left;
-    margin-bottom: 10px;*/
+    position: relative;
+    text-align: center;
 }
 
 figure figcaption {
@@ -224,8 +217,8 @@ figure figcaption {
     height: 200px;
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
     float:left;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 5px;
+    margin-bottom: 10px;
 }
 
 .flip-box-inner {
@@ -257,13 +250,9 @@ figure figcaption {
   
   /* Style the back side */
 .flip-box-back {
-    background-color: #a31313;
+    background-color: #b94848;
     color: white;
     transform: rotateY(180deg);
-}
-
-.flip-box-back b {
-    padding: 5px;
 }
 
 /*style of table*/
@@ -273,18 +262,17 @@ td{
     font-size: 15px;
 }
 
-#Dramas a{
+p a{
     text-decoration: none;
     color:white;
-    font-size: 20px;
 }
 
-#Dramas a:visited {
+p a:visited {
     text-decoration: none;
     color:white; 
 }
 
-#Dramas a:hover {
+p a:hover {
     color: black;
     opacity: 0.7;
 }
@@ -300,26 +288,6 @@ div.scrollmenu a{
   text-align: center;
   padding: 14px;
   text-decoration: none;
-}
-
-/* Horizontal Scrollbar */
-.scrollmenu::-webkit-scrollbar {
-    height: 4px; 
-}
-  
-.scrollmenu::-webkit-scrollbar-track {
-    border-radius: 10px;
-    background: gray;
-}
-  
-.scrollmenu::-webkit-scrollbar-thumb {
-    background: red; 
-    border-radius: 10px;
-    box-shadow: inset 0 0 3px grey;
-}
-
-.scrollmenu::-webkit-scrollbar-thumb:hover {
-    background: #a31313; 
 }
 
 /* Hovering over Movies */
@@ -382,4 +350,3 @@ div.scrollmenu a{
 #login form {
     text-align:center;
 }
-
