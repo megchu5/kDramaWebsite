@@ -71,17 +71,24 @@ function search_dbases($mysqli, $sLast, $sFirst, $sDrama) {
     // search database and build a table with the results
     $result = $mysqli->query($query) or die($mysqli->error);
     $count = 0;
+    $printed = [];
 
     while($row = $result->fetch_array(MYSQLI_ASSOC)) {
         $count += 1;
+        $name = "$row[lastName] $row[firstName]";
         if ($count == 1) {
             $display_string = "<h4>Search Results for $search</h4>";
         }
-        $display_string .= "<figure> <div class='flip-box'> <div class='flip-box-inner'> <div class='flip-box-front'>";
-        $display_string .= "<img src='Info_pages/Actor_pics/$row[pic]' style='width:160px;height:200px'>";
-        $display_string .= "</div> <div class='flip-box-back'> <p><a href='Info_pages/abyss.html'>Abyss</a></p>";
-        $display_string .= "</div> </div> </div>";
-        $display_string .= "<figcaption>$row[lastName] $row[firstName]</figcaption> </figure>";
+        if (!array_key_exists($name, $printed)) {
+            // remove once info page column added to actorPics table
+            //$printed[$name] = 1;
+            $display_string .= "<figure> <div class='flip-box'> <div class='flip-box-inner'> <div class='flip-box-front'>";
+            $display_string .= "<img src='Info_pages/Actor_pics/$row[pic]' style='width:160px;height:200px'>";
+            //$display_string .= "</div> <div class='flip-box-back'> $row[dramaLinks]";
+            $display_string .= "</div> <div class='flip-box-back'> <p>$row[dramaTitle]</p>";
+            $display_string .= "</div> </div> </div>";
+            $display_string .= "<figcaption>$row[lastName] $row[firstName]</figcaption> </figure>";
+        }
     }
 
     // account for case that there are no results that match

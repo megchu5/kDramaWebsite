@@ -22,15 +22,30 @@
     </div>
     
 <div id = 'content'>
+
+    <?php
+		if (!isset($_COOKIE["loggedin"])) {
+			header("Location: quiz_locked.php");
+		}
+	?>
    
     <!-- Sidebar -->
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="home.html">Home</a>
-        <a href="dramas.html">Dramas</a>
-        <a href="actors.html">Actors</a>
+        <a href="home.php">Home</a>
+        <?php
+            if (!isset($_COOKIE["loggedin"])) {
+                echo "<a href = 'login.php'>Login/Register</a>";
+            } else {
+                echo "<form method='POST' action='home.php'>";
+                echo "<input class = 'logout' type='submit' name = 'logout' value = 'Logout'>";
+                echo "</form>";
+            }
+	    ?>
+        <a href="dramas.php">Dramas</a>
+        <a href="actors.php">Actors</a>
         <a onclick = 'surprise()'>Surprise Me!</a>
-        <a href="contact.html">Contact Us</a>
+        <a href="contact.php">Contact Us</a>
     </div>
     <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
 
@@ -307,7 +322,7 @@ RESULTS;
 
 <!-- Sidebar Implementation -->
 <script>
-var sites = ["/Info_pages/crash_landing_info.html","/Info_pages/itaewon_class_info.html","/Info_pages/its_okay_info.html","/Info_pages/start_up_info.html","/Info_pages/true_beauty_info.html","/Info_pages/dots_info.html","/Info_pages/one_spring_info.html","/Info_pages/suspicious_info.html","/Info_pages/healer_info.html","/Info_pages/lawless_lawyer_info.html","/Info_pages/man_to_man.html","/Info_pages/vagabond.html","/Info_pages/vincenzo.html","/Info_pages/hospital_playlist_info.html","/Info_pages/laughter_waikiki_info.html","/Info_pages/reply_1988_info.html","/Info_pages/secretary_kim_info.html","/Info_pages/strong_woman_info.html","/Info_pages/arthdal.html","/Info_pages/goblin.html","/Info_pages/hotel_del_luna.html","/Info_pages/oh_my_ghost.html","/Info_pages/w.html"]
+var sites = ["Info_pages/crash_landing_info.php","Info_pages/itaewon_class_info.php","Info_pages/its_okay_info.php","Info_pages/start_up_info.php","Info_pages/true_beauty_info.php","Info_pages/dots_info.php","Info_pages/one_spring_info.php","Info_pages/suspicious_info.php","Info_pages/healer_info.php","Info_pages/lawless_lawyer_info.php","Info_pages/man_to_man.php","Info_pages/vagabond.php","Info_pages/vincenzo.php","Info_pages/hospital_playlist_info.php","Info_pages/laughter_waikiki_info.php","Info_pages/reply_1988_info.php","Info_pages/secretary_kim_info.php","Info_pages/strong_woman_info.php","Info_pages/arthdal.php","Info_pages/goblin.php","Info_pages/hotel_del_luna.php","Info_pages/oh_my_ghost.php","Info_pages/w.php"]
 
 function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
@@ -321,7 +336,6 @@ function closeNav() {
     
 //Surprise me
 function surprise(){
-    console.log('hello');
 	var idx = Math.floor(Math.random()*23);
 	window.open(sites[idx], "_self"); return false
 }

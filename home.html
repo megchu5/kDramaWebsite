@@ -12,7 +12,14 @@
     <script type = 'text/javascript' src = 'home.js'></script>
 </head> 
 
-<body>
+<script>
+    function redirect_to_home() {
+        window.open("home.php", "_self"); return false
+    }
+</script>
+
+<body onload = 'redirect_to_home()'>
+
     <!-- Header -->
     <div id = 'header'> 
         <a href="home.html"><img id = 'logo' src="logo.png" alt="Logo", width = 100></a>
@@ -28,7 +35,7 @@
         <a href="quiz.html">Quiz</a>
         <a href="dramas.html">Dramas</a>
         <a href="actors.html">Actors</a>
-        <a onclick = 'surprise()'>Surprise Me!</a>
+        <a onclick = 'surprise_1()'>Surprise Me!</a>
         <a href="contact.html">Contact Us</a>
     </div>
     <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
@@ -39,7 +46,7 @@
         <h3>Soondu Koreaboo is a play on the Korean soft tofu soup (soondubu) and the name for those who enjoy Korean pop culture. 
             No matter if you’ve just discovered the expansive world of K-dramas or if you’re a seasoned veteran, this 
             site aims to hel'p you find what you should watch next! Head over to the Quiz to let us do the searching, or browse 
-            our library of shows! Happy watching!</h3>    
+            our library of shows! Happy watching! </h3>    
     </div>
     
     <!-- Most Popular -->
@@ -187,6 +194,12 @@
                     <div class = 'text'>School 2017</div>
                 </div>
             </div>
+            <div class = 'container'>
+                <a href="Info_pages/doctor_stranger.html"><img src="KDramas/Romance/doctorstranger.jpg" alt="Doctor stranger" width="200"></a>
+                <div class = 'middle'>
+                    <div class = 'text'>Doctor Stranger</div>
+                </div>
+            </div>
         </div>
     </div>
     
@@ -225,6 +238,18 @@
                 <a href="Info_pages/vincenzo.html"><img src="KDramas/Action/Vincenzo.jpg" alt="Vincenzo" width="200"></a>
                 <div class = 'middle'>
                     <div class = 'text'>Vincenzo</div>
+                </div>
+            </div>
+            <div class = 'container'>
+                <a href="Info_pages/extracurricular.html"><img src="KDramas/Action/extracurricular.jpg" alt="Extracurricular" width="200"></a>
+                <div class = 'middle'>
+                    <div class = 'text'>Extracurricular</div>
+                </div>
+            </div>
+            <div class = 'container'>
+                <a href="Info_pages/city_hunter.html"><img src="KDramas/Action/cityhunter.jpg" alt="City Hunter" width="200"></a>
+                <div class = 'middle'>
+                    <div class = 'text'>City Hunter</div>
                 </div>
             </div>
         </div>
@@ -291,6 +316,12 @@
                     <div class = 'text'>Weightlifting Fairy</div>
                 </div>
             </div>
+            <div class = 'container'>
+                <a href="Info_pages/dreamhigh_info.html"><img src="KDramas/Comedy/dreamhigh.jpg" alt="Dream High" width="200"></a>
+                <div class = 'middle'>
+                    <div class = 'text'>Dream High</div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -355,7 +386,12 @@
                     <div class = 'text'>Abyss</div>
                 </div>
             </div>
-            
+            <div class = 'container'>
+                <a href="Info_pages/king_eternalmonarch.html"><img src="KDramas/Fantasy/the_king_eternal_monarch.jpg" alt="King Eternal Monarch" width="200"></a>
+                <div class = 'middle'>
+                    <div class = 'text'>The King: Eternal Monarch</div>
+                </div>
+            </div>
         </div>
     </div>
 
