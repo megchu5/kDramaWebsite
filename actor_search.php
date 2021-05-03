@@ -31,7 +31,8 @@ $sDrama = $mysqli->real_escape_string($sDrama);
 
 // determine results to show given user input
 if ($sLast == '' && $sFirst == '' & $sDrama == '') {
-    show_all();
+    //show_all();
+    all_actors($mysqli);
 } else {
     search_dbases($mysqli, $sLast, $sFirst, $sDrama);
 }
@@ -80,12 +81,10 @@ function search_dbases($mysqli, $sLast, $sFirst, $sDrama) {
             $display_string = "<h4>Search Results for $search</h4>";
         }
         if (!array_key_exists($name, $printed)) {
-            // remove once info page column added to actorPics table
-            //$printed[$name] = 1;
+            $printed[$name] = 1;
             $display_string .= "<figure> <div class='flip-box'> <div class='flip-box-inner'> <div class='flip-box-front'>";
             $display_string .= "<img src='Info_pages/Actor_pics/$row[pic]' style='width:160px;height:200px'>";
-            //$display_string .= "</div> <div class='flip-box-back'> $row[dramaLinks]";
-            $display_string .= "</div> <div class='flip-box-back'> <p>$row[dramaTitle]</p>";
+            $display_string .= "</div> <div class='flip-box-back'> $row[dramaLinks]";
             $display_string .= "</div> </div> </div>";
             $display_string .= "<figcaption>$row[lastName] $row[firstName]</figcaption> </figure>";
         }
@@ -100,7 +99,58 @@ function search_dbases($mysqli, $sLast, $sFirst, $sDrama) {
     echo $display_string;
 }
 
-function show_all() {
+function all_actors($mysqli) {
+    // build query for all actors alphabetically ordered
+    $query = "SELECT * FROM actorPics ORDER BY lastName, firstName;";
+
+    // search database and build a table with the results
+    $result = $mysqli->query($query) or die($mysqli->error);
+
+    $display_AE = "<h4>A - E</h4>";
+    $display_FJ = "<h4>F - J</h4>";
+    $display_KO = "<h4>K - O</h4>";
+    $display_PT = "<h4>P - T</h4>";
+    $display_UZ = "<h4>U - Z</h4>";
+
+    // print the results
+    while($row = $result->fetch_array(MYSQLI_ASSOC)) {
+        // build the string for each actor
+        $display_string = "";
+        $display_string .= "<figure> <div class='flip-box'> <div class='flip-box-inner'> <div class='flip-box-front'>";
+        $display_string .= "<img src='Info_pages/Actor_pics/$row[pic]' style='width:160px;height:200px'>";
+        $display_string .= "</div> <div class='flip-box-back'> $row[dramaLinks]";
+        $display_string .= "</div> </div> </div>";
+        $display_string .= "<figcaption>$row[lastName] $row[firstName]</figcaption> </figure>";
+
+        // determine which group actor belongs alphabetically
+        $lastName = "$row[lastName]";
+        $firstName = "$row[firstName]";
+
+        if ($lastName == '') {
+            $reference = $firstName;
+        } else {
+            $reference = $lastName;
+        }
+
+        if (strcmp("A", $reference) < 1 AND strcmp($reference, "F") < 1) {
+            $display_AE .= $display_string;
+        } else if (strcmp("F", $reference) < 1 AND strcmp($reference, "K") < 1) {
+            $display_FJ .= $display_string;
+        } else if (strcmp("K", $reference) < 1 AND strcmp($reference, "P") < 1) {
+            $display_KO .= $display_string;
+        } else if (strcmp("P", $reference) < 1 AND strcmp($reference, "U") < 1) {
+            $display_PT .= $display_string;
+        } else {
+            $display_UZ .= $display_string;
+        } 
+        
+    }
+
+    // display the results
+    echo $display_AE.$display_FJ.$display_KO.$display_PT.$display_UZ;
+}
+
+function show_all($mysqli) {
     print <<<ALL
     <div>
        <h4>A-E</h4>
@@ -111,7 +161,7 @@ function show_all() {
                         <img src="Info_pages/Actor_pics/baesuzy.jpg" alt="Bae Suzy" style="width:160px;height:200px">
                     </div>
                     <div class="flip-box-back">
-                        <p><a href="Info_pages/start_up_info.html">Start-Up</a></p>
+                        <p><a href='Info_pages/big.html'>Big</a></p><p><a href='Info_pages/dreamhigh_info.html'>Dream High</a></p><p><a href='Info_pages/start_up_info.html'>Start Up</a></p><p><a href='Info_pages/vagabond.html'>Vagabond</a></p>
                     </div>
                 </div>
             </div>
