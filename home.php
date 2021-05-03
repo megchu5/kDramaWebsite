@@ -44,7 +44,7 @@
         <a href="quiz.php">Quiz</a>
         <a href="dramas.php">Dramas</a>
         <a href="actors.php">Actors</a>
-        <a onclick = 'surprise_1()'>Surprise Me!</a>
+        <a onclick = "surprise_1()">Surprise Me!</a>
         <a href="contact.php">Contact Us</a>
     </div>
     <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
