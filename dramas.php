@@ -50,17 +50,17 @@
         <table width = "100%">
             <tr>
                 <td><a href = "Info_pages/arthdal.php">Arthdal Chronicles</a></td>
-                <td><a href = "Info_pages/crash_landing_info.php">Crash Landing On You</a></td>
-                <td><a href = "Info_pages/dots_info.php">Descendants of the Sun</a></td>
-            </tr>
-            <tr>
                 <td><a href = "Info_pages/abyss.php">Abyss</a></td>
                 <td><a href = "Info_pages/big.php">Big</a></td>
-                <td><a href = "Info_pages/boys_over_flowers.php">Boys Over Flowers</a></td>
             </tr>
             <tr>
+                <td><a href = "Info_pages/boys_over_flowers.php">Boys Over Flowers</a></td>
                 <td><a href = "Info_pages/cinderella.php">Cinderella</a></td>
-                <td><a href = "Info_pages/city_hunter.php">City Hunter</a></td>
+                <td><a href = "Info_pages/city_hunter.php">City Hunter</a></td>                
+            </tr>
+            <tr>
+                <td><a href = "Info_pages/crash_landing_info.php">Crash Landing On You</a></td>
+                <td><a href = "Info_pages/dots_info.php">Descendants of the Sun</a></td>
                 <td><a href = "Info_pages/doctor_stranger.php">Doctor Stranger</a></td>
             </tr>
             <tr>
@@ -74,15 +74,17 @@
             <tr>
                 <td><a href = "Info_pages/goblin.php">Goblin</a></td>
                 <td><a href = "Info_pages/healer_info.php">Healer</a></td>
-                <td><a href = "Info_pages/hospital_playlist_info.php">Hospital Playlist</a></td>
+                <td><a href = "Info_pages/heirs.php">Heirs</a></td>
+                
             </tr>
             <tr>
+                <td><a href = "Info_pages/hospital_playlist_info.php">Hospital Playlist</a></td>
                 <td><a href = "Info_pages/hotel_del_luna.php.">Hotel del Luna</a></td>
                 <td><a href = "Info_pages/itaewon_class_info.php">Itaewon Class</a></td>
-                <td><a href = "Info_pages/its_okay_info.php">It's Okay to Not Be Okay</a></td>
+                
             </tr>
             <tr>
-                <td><a href = "Info_pages/heirs.php">Heirs</a></td>
+                <td><a href = "Info_pages/its_okay_info.php">It's Okay to Not Be Okay</a></td>
                 <td><a href = "Info_pages/your_voice.php">I Can Hear Your Voice</a></td>
                 <td></td>
             </tr>
@@ -90,53 +92,50 @@
         <h4 style="clear:both">K-O</h4>
         <table width = "100%">
             <tr>
+                <td><a href = "Info_pages/kill_me_heal_me.php">Kill Me Heal Me</a></td>
                 <td><a href = "Info_pages/laughter_waikiki_info.php">Laughter in Waikiki</a></td>
                 <td><a href = "Info_pages/lawless_lawyer_info.php">Lawless Lawyer</a></td>
-                <td><a href = "Info_pages/lovestruck_info.php">Lovestruck in the City</a></td>
-                
             </tr>
             <tr>
+                <td><a href = "Info_pages/lovestruck_info.php">Lovestruck in the City</a></td>
                 <td><a href = "Info_pages/man_to_man.php">Man to Man</a></td>
                 <td> <a href = "Info_pages/memories_of_alhambra.php">Memories of the Alhambra</a></td>
-                <td> <a href = "Info_pages/mystic_pop.php">Mystic Pop-Up Bar</a></td>
             </tr>
             <tr>
+                <td><a href = "Info_pages/man_to_man.php">My Love From Another Star</a></td>
+                <td> <a href = "Info_pages/mystic_pop.php">Mystic Pop-Up Bar</a></td>
                 <td> <a href = "Info_pages/navillera.php">Navillera</a></td>
+            </tr>
+            <tr>
                 <td><a href = "Info_pages/oh_my_ghost.php">Oh my Ghost</a></td>
                 <td><a href = "Info_pages/one_spring_info.php">One Spring Night</a></td>
-            </tr>
-            <tr>
-                <td><a href = "Info_pages/kill_me_heal_me.php">Kill Me Heal Me</a></td>
-                <td><a href = "Info_pages/man_to_man.php">My Love From Another Star</a></td>
                 <td></td>
             </tr>
+            
         </table>
         <h4 style="clear:both">P-T</h4>
         <table width = "100%">
             <tr>
-                <td><a href = "Info_pages/reply_1988_info.php">Reply 1988</a></td>
-                <td><a href = "Info_pages/romance_book_info.php">Romance is a Bonus Book</a></td>
-                <td><a href = "Info_pages/start_up_info.php">Start Up</a></td>
-            </tr>
-            <tr>
-                <td><a href = "Info_pages/strong_woman_info.php">Strong Woman Do Bong Soon</a></td>
-                <td><a href = "Info_pages/suspicious_info.php">Suspicious Partner</a></td>
-                <td> <a href = "Info_pages/tale_nine_tailed.php">Tale of the Nine-Tailed</a></td>
-            </tr>
-            <tr>
-                <td><a href = "Info_pages/true_beauty_info.php">True Beauty</a></td>
-                <td><a href = "Info_pages/king_eternalmonarch.php">The King: Eternal Monarch</a></td>
-                <td></td>
-            </tr>
-            <tr>
                 <td><a href = "Info_pages/pinnochio.php">Pinnochio</a></td>
                 <td><a href = "Info_pages/strong_woman_info.php">Rain</a></td>
-                <td><a href = "Info_pages/true_beauty_info.php">Reply 1997</a></td>
+                <td><a href = "Info_pages/reply_1988_info.php">Reply 1988</a></td>
             </tr>
             <tr>
+                <td><a href = "Info_pages/true_beauty_info.php">Reply 1997</a></td>
+                <td><a href = "Info_pages/romance_book_info.php">Romance is a Bonus Book</a></td>
                 <td><a href = "Info_pages/school_2017.php">School 2017</a></td>
-                <td></td>
-                <td></td>
+                           
+            </tr>
+            <tr>
+                <td><a href = "Info_pages/start_up_info.php">Start Up</a></td>    
+                <td><a href = "Info_pages/strong_woman_info.php">Strong Woman Do Bong Soon</a></td>
+                <td><a href = "Info_pages/suspicious_info.php">Suspicious Partner</a></td>
+                
+            </tr>
+            <tr>
+                <td><a href = "Info_pages/tale_nine_tailed.php">Tale of the Nine-Tailed</a></td>
+                <td><a href = "Info_pages/true_beauty_info.php">True Beauty</a></td>
+                <td><a href = "Info_pages/king_eternalmonarch.php">The King: Eternal Monarch</a></td>
             </tr>
         </table>
         <h4 style="clear:both">U-Z</h4>
@@ -147,12 +146,12 @@
                 <td> <a href = "Info_pages/w.php">W</a></td>
             </tr>
             <tr>
-                <td> <a href = "Info_pages/secretary_kim_info.php">What's Wrong with Secretary Kim</a></td>
-                <td> <a href = "Info_pages/when_camellia.php">When the Camellia Blooms</a></td>
-                <td></td>
-            <tr>
                 <td> <a href = "Info_pages/weightlifting_fairy.php">Weightlifting Fairy</a></td>
+                <td> <a href = "Info_pages/secretary_kim_info.php">What's Wrong with Secretary Kim</a></td>                
+                <td> <a href = "Info_pages/when_camellia.php">When the Camellia Blooms</a></td>
+            <tr>
                 <td> <a href = "Info_pages/world_of_the_married.php">World of the Married</a></td>
+                <td></td>
                 <td></td>
             </tr>
         </table>
@@ -160,7 +159,7 @@
     
     <footer>
         <hr style:"color=#333;border-top:1px;">
-        <h11>Last Updated: 4/5/2020 by Megan Chu, Jennifer Tang, Kelly Wang, and Laurence Wang</h11>
+        <h11>Last Updated: 5/4/2021 by Megan Chu, Jennifer Tang, Kelly Wang, and Laurence Wang</h11>
     </footer>
 
 </div>
