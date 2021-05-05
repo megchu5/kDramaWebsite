@@ -1008,7 +1008,7 @@ function show_all($mysqli) {
             <div class="flip-box">
                 <div class="flip-box-inner">
                     <div class="flip-box-front">
-                        <img src="Info_pages/Actor_pics/sonyejin.webp" alt="Son Ye-jin" style="width:160px;height:200px">
+                        <img src="Info_pages/Actor_pics/sonyejin.jpg" alt="Son Ye-jin" style="width:160px;height:200px">
                     </div>
                     <div class="flip-box-back">
                         <p><a href="Info_pages/true_beauty_info.html">Drama1</a></p>

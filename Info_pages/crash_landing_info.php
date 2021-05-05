@@ -71,7 +71,7 @@
         </figure>
 
         <figure>
-            <img src="Actor_pics/sonyejin.webp" alt="Son Yi Jin">
+            <img src="Actor_pics/sonyejin.jpg" alt="Son Yi Jin">
             <figcaption>Son Ye Jin as Yoon Seri</figcaption>
         </figure>
 

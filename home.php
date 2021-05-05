@@ -203,6 +203,12 @@
                     <div class = 'text'>School 2017</div>
                 </div>
             </div>
+            <div class = 'container'>
+                <a href="Info_pages/doctor_stranger.html"><img src="KDramas/Romance/doctorstranger.jpg" alt="Doctor stranger" width="200"></a>
+                <div class = 'middle'>
+                    <div class = 'text'>Doctor Stranger</div>
+                </div>
+            </div>
         </div>
     </div>
     
@@ -241,6 +247,18 @@
                 <a href="Info_pages/vincenzo.php"><img src="KDramas/Action/Vincenzo.jpg" alt="Vincenzo" width="200"></a>
                 <div class = 'middle'>
                     <div class = 'text'>Vincenzo</div>
+                </div>
+            </div>
+            <div class = 'container'>
+                <a href="Info_pages/extracurricular.html"><img src="KDramas/Action/extracurricular.jpg" alt="Extracurricular" width="200"></a>
+                <div class = 'middle'>
+                    <div class = 'text'>Extracurricular</div>
+                </div>
+            </div>
+            <div class = 'container'>
+                <a href="Info_pages/city_hunter.html"><img src="KDramas/Action/cityhunter.jpg" alt="City Hunter" width="200"></a>
+                <div class = 'middle'>
+                    <div class = 'text'>City Hunter</div>
                 </div>
             </div>
         </div>
@@ -307,6 +325,12 @@
                     <div class = 'text'>Weightlifting Fairy</div>
                 </div>
             </div>
+            <div class = 'container'>
+                <a href="Info_pages/dreamhigh_info.html"><img src="KDramas/Comedy/dreamhigh.jpg" alt="Dream High" width="200"></a>
+                <div class = 'middle'>
+                    <div class = 'text'>Dream High</div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -371,13 +395,18 @@
                     <div class = 'text'>Abyss</div>
                 </div>
             </div>
-            
+            <div class = 'container'>
+                <a href="Info_pages/king_eternalmonarch.html"><img src="KDramas/Fantasy/the_king_eternal_monarch.jpg" alt="King Eternal Monarch" width="200"></a>
+                <div class = 'middle'>
+                    <div class = 'text'>The King: Eternal Monarch</div>
+                </div>
+            </div>
         </div>
     </div>
 
     <footer>
         <hr style="color:#333;border-top:1px;clear:both">
-        <h11>Last Updated: 4/19/2020 by Megan Chu, Jennifer Tang, Kelly Wang, and Laurence Wang</h11>
+        <h11>Last Updated: 5/4/2021 by Megan Chu, Jennifer Tang, Kelly Wang, and Laurence Wang</h11>
     </footer>
 
 </div>

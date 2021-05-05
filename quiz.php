@@ -236,17 +236,17 @@ NEXT;
     // given a genre, recommend a random drama within that genre
     function recommend($genre) {
         $dramas = array (
-            "romance" => array('crash_landing_info', 'dots_info', 'lovestruck_info', 'one_spring_info', 'romance_book_info', 'start_up_info', 'suspicious_info', 'when_camellia'),
-            "comedy" => array('true_beauty_info', 'hospital_playlist_info', 'laughter_waikiki_info', 'reply_1988_info', 'secretary_kim_info', 'strong_woman_info', 'vincenzo'),
-            "action" => array('itaewon_class_info', 'healer_info', 'lawless_lawyer_info', 'man_to_man', 'vagabond', 'vincenzo'),
-            "fantasy" => array('its_okay_info', 'arthdal', 'goblin', 'hotel_del_luna', 'oh_my_ghost', 'w', 'memories_of_alhambra', 'mystic_pop', 'tale_nine_tailed')
+            "romance" => array('crash_landing_info', 'dots_info', 'lovestruck_info', 'one_spring_info', 'romance_book_info', 'start_up_info', 'suspicious_info', 'when_camellia', 'boys_over_flowers', 'cinderella', 'doctor_stranger', 'heirs', 'kill_me_heal_me', 'my_love_from_another_star', 'school_2017', 'world_of_the_married', 'your_voice'),
+            "comedy" => array('true_beauty_info', 'hospital_playlist_info', 'laughter_waikiki_info', 'reply_1988_info', 'secretary_kim_info', 'strong_woman_info', 'vincenzo', 'big', 'dreamhigh_info', 'fight_my_way', 'reply_1997', 'weightlifting_fairy'),
+            "action" => array('itaewon_class_info', 'healer_info', 'lawless_lawyer_info', 'man_to_man', 'vagabond', 'vincenzo', 'city_hunter', 'extracurricular'),
+            "fantasy" => array('its_okay_info', 'arthdal', 'goblin', 'hotel_del_luna', 'oh_my_ghost', 'w', 'memories_of_alhambra', 'mystic_pop', 'tale_nine_tailed', 'abyss', 'king_eternalmonarch')
         );
 
         $drama_pics = array (
-            "romance" => array('Most_Popular/Crash_Landing.jpg', 'Romance/Descendants.jpg', 'Romance/Lovestruck.jpg', 'Romance/One_Spring.jpg', 'Romance/Romance_Bonus.jpg', 'Most_Popular/Start_Up.jpg', 'Romance/Suspicious_Partner.jpg', 'Romance/When_the_Camellia_Blooms.jpg'),
-            "comedy" => array('Most_Popular/True_Beauty.jpg', 'Comedy/Hospital_Playlist.jpg', 'Comedy/Laughter_in_Waikiki.jpg', 'Comedy/Reply_1988.jpg', "Comedy/What's_Wrong_with_Secretary_Kim.jpg", 'Comedy/Strong_Woman.jpg', 'Action/Vincenzo.jpg'),
-            "action" => array('Most_Popular/Itaewon_Class.jpg', 'Action/Healer.jpg', 'Action/Lawless-Lawyer.jpg', 'Action/Man_to_Man.jpg', 'Action/Vagabond.jpg', 'Action/Vincenzo.jpg'),
-            "fantasy" => array('Most_Popular/Its_Okay.jpg', 'Fantasy/Arthdal.jpg', 'Fantasy/Goblin.jpg', 'Fantasy/Hotel_Del_Luna.jpg', 'Fantasy/Oh_My_Ghost.jpg', 'Fantasy/W.jpg', 'Fantasy/Memories_Alhambra.jpg', 'Fantasy/Mystic_Popup_Bar.jpg', 'Fantasy/Tale_of_the_Nine-Tailed.png')
+            "romance" => array('Most_Popular/Crash_Landing.jpg', 'Romance/Descendants.jpg', 'Romance/Lovestruck.jpg', 'Romance/One_Spring.jpg', 'Romance/Romance_Bonus.jpg', 'Most_Popular/Start_Up.jpg', 'Romance/Suspicious_Partner.jpg', 'Romance/When_the_Camellia_Blooms.jpg', 'Most_Popular/Boys_Over_Flowers.jpg', 'Romance/Cinderella.jpg', 'Romance/doctorstranger.jpg', 'Romance/Heirs.jpg', 'Romance/kill-me-heal-me.jpg', 'Romance/mylovefromanotherstar.jpg', 'Romance/school2017.jpg', 'Romance/world_of_married.jpg', 'Romance/I_Can_Hear_Your_Voice.jpg'),
+            "comedy" => array('Most_Popular/True_Beauty.jpg', 'Comedy/Hospital_Playlist.jpg', 'Comedy/Laughter_in_Waikiki.jpg', 'Comedy/Reply_1988.jpg', "Comedy/What's_Wrong_with_Secretary_Kim.jpg", 'Comedy/Strong_Woman.jpg', 'Action/Vincenzo.jpg', 'Comedy/big.jpg', 'Comedy/dreamhigh.jpg', 'Comedy/fightmyway.jpg', 'Comedy/reply_1997.jpeg', 'Comedy/weightlifting_fair.jpg'),
+            "action" => array('Most_Popular/Itaewon_Class.jpg', 'Action/Healer.jpg', 'Action/Lawless-Lawyer.jpg', 'Action/Man_to_Man.jpg', 'Action/Vagabond.jpg', 'Action/Vincenzo.jpg', 'Action/cityhunter.jpg', 'Action/extracurricular.jpg'),
+            "fantasy" => array('Most_Popular/Its_Okay.jpg', 'Fantasy/Arthdal.jpg', 'Fantasy/Goblin.jpg', 'Fantasy/Hotel_Del_Luna.jpg', 'Fantasy/Oh_My_Ghost.jpg', 'Fantasy/W.jpg', 'Fantasy/Memories_Alhambra.jpg', 'Fantasy/Mystic_Popup_Bar.jpg', 'Fantasy/Tale_of_the_Nine-Tailed.png', 'Fantasy/abyss.jpg', 'Fantasy/the_king_eternal_monarch.jpg')
         );
 
         // get the length of the corresponding array of dramas
@@ -296,7 +296,7 @@ NEXT;
         <p>Here's a recommendation! Click to learn more!</p><br>
 
         <div id="drama_rec">
-        <a href="Info_pages/$title.html"><img src="KDramas/$pic" alt="$title" height="800px"></a>
+        <a href="Info_pages/$title.php"><img src="KDramas/$pic" alt="$title" height="800px"></a>
         </div>
 
         <br><br>
@@ -317,7 +317,7 @@ RESULTS;
 
     <footer>
         <hr style="color:#333;border-top:1px;">
-        <h11>Last Updated: 4/3/2020 by Megan Chu, Jennifer Tang, Kelly Wang, and Laurence Wang</h11>
+        <h11>Last Updated: 5/4/2021 by Megan Chu, Jennifer Tang, Kelly Wang, and Laurence Wang</h11>
     </footer>
 
 <!-- Sidebar Implementation -->
