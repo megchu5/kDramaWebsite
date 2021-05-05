@@ -117,14 +117,13 @@
         <table width = "100%">
             <tr>
                 <td><a href = "Info_pages/pinnochio.php">Pinnochio</a></td>
-                <td><a href = "Info_pages/strong_woman_info.php">Rain</a></td>
                 <td><a href = "Info_pages/reply_1988_info.php">Reply 1988</a></td>
+                <td><a href = "Info_pages/reply_1997.php">Reply 1997</a></td>
             </tr>
             <tr>
-                <td><a href = "Info_pages/true_beauty_info.php">Reply 1997</a></td>
                 <td><a href = "Info_pages/romance_book_info.php">Romance is a Bonus Book</a></td>
                 <td><a href = "Info_pages/school_2017.php">School 2017</a></td>
-                           
+                <td><a href = "Info_pages/rain.php">Something in the Rain</a></td>
             </tr>
             <tr>
                 <td><a href = "Info_pages/start_up_info.php">Start Up</a></td>    
