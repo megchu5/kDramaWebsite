@@ -204,7 +204,7 @@
                 </div>
             </div>
             <div class = 'container'>
-                <a href="Info_pages/doctor_stranger.html"><img src="KDramas/Romance/doctorstranger.jpg" alt="Doctor stranger" width="200"></a>
+                <a href="Info_pages/doctor_stranger.php"><img src="KDramas/Romance/doctorstranger.jpg" alt="Doctor stranger" width="200"></a>
                 <div class = 'middle'>
                     <div class = 'text'>Doctor Stranger</div>
                 </div>
@@ -250,13 +250,13 @@
                 </div>
             </div>
             <div class = 'container'>
-                <a href="Info_pages/extracurricular.html"><img src="KDramas/Action/extracurricular.jpg" alt="Extracurricular" width="200"></a>
+                <a href="Info_pages/extracurricular.php"><img src="KDramas/Action/extracurricular.jpg" alt="Extracurricular" width="200"></a>
                 <div class = 'middle'>
                     <div class = 'text'>Extracurricular</div>
                 </div>
             </div>
             <div class = 'container'>
-                <a href="Info_pages/city_hunter.html"><img src="KDramas/Action/cityhunter.jpg" alt="City Hunter" width="200"></a>
+                <a href="Info_pages/city_hunter.php"><img src="KDramas/Action/cityhunter.jpg" alt="City Hunter" width="200"></a>
                 <div class = 'middle'>
                     <div class = 'text'>City Hunter</div>
                 </div>
@@ -326,7 +326,7 @@
                 </div>
             </div>
             <div class = 'container'>
-                <a href="Info_pages/dreamhigh_info.html"><img src="KDramas/Comedy/dreamhigh.jpg" alt="Dream High" width="200"></a>
+                <a href="Info_pages/dreamhigh_info.php"><img src="KDramas/Comedy/dreamhigh.jpg" alt="Dream High" width="200"></a>
                 <div class = 'middle'>
                     <div class = 'text'>Dream High</div>
                 </div>
@@ -396,7 +396,7 @@
                 </div>
             </div>
             <div class = 'container'>
-                <a href="Info_pages/king_eternalmonarch.html"><img src="KDramas/Fantasy/the_king_eternal_monarch.jpg" alt="King Eternal Monarch" width="200"></a>
+                <a href="Info_pages/king_eternalmonarch.php"><img src="KDramas/Fantasy/the_king_eternal_monarch.jpg" alt="King Eternal Monarch" width="200"></a>
                 <div class = 'middle'>
                     <div class = 'text'>The King: Eternal Monarch</div>
                 </div>
