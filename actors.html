@@ -51,35 +51,17 @@
         <h1>Soondu Koreaboo</h1>
         <h2>Dramas</h2></a>
     </div>
-
-
-    <?php 
-        if (isset($_POST['logout'])) {
-            setcookie("loggedin", "true", time()-(10 * 365 * 24 * 60 * 60), "/");
-            setcookie("quizLogin", "true", time()-(10 * 365 * 24 * 60 * 60), "/");
-            header("Location: home.php");
-        }
-    ?>
     
 <div id = 'content'>
    
     <!-- Sidebar -->
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="home.php">Home</a>
-        <?php
-            if (!isset($_COOKIE["loggedin"])) {
-                echo "<a href = 'login.php'>Login/Register</a>";
-            } else {
-                echo "<form method='POST' action='home.php'>";
-                echo "<input class = 'logout' type='submit' name = 'logout' value = 'Logout'>";
-                echo "</form>";
-            }
-	    ?>  
+        <a href="home.html">Home</a>
         <a href="quiz.html">Quiz</a>
-        <a href="dramas.php">Dramas</a>
-        <a onclick = 'surprise_1()'>Surprise Me!</a>
-        <a href="contact.php">Contact Us</a>
+        <a href="dramas.html">Dramas</a>
+        <a onclick = 'surprise()'>Surprise Me!</a>
+        <a href="contact.html">Contact Us</a>
     </div>
     <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
     
@@ -96,8 +78,8 @@
             <tr><td><label>Last Name: <input type="text" size="15" id="lastName"></label></td> 
             <td><label>First Name: <input type="text" size="15" id="firstName"></label></td> 
             <td><label>Drama: <input type="text" size="15" id="dramaTitle"></label></td></tr>
-            <tr><td colspan=3><input class = "button" type="button" name="search_button" value="Search" onclick="ajax_display()">
-            <input class = "button" type="button" value="Reset" onclick="reset_search()"></td></tr>
+            <tr><td colspan=3><input type="button" name="search_button" value="Search" onclick="ajax_display()">
+            <input type="button" value="Reset" onclick="reset_search()"></td></tr>
         </table>
     </form>
     </div>

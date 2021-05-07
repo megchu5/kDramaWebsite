@@ -38,8 +38,7 @@
 	<script language = "javascript" type = "text/javascript">
 
     //Browser Support Code
-        function ajaxFunctionLogin(server,user,pwd,dbName){
-            
+        function ajaxFunction(server,user,pwd,dbName){
         var ajaxRequest;  // The variable that makes Ajax possible!
         
         ajaxRequest = new XMLHttpRequest();
@@ -49,8 +48,8 @@
         ajaxRequest.onreadystatechange = function(){
             if(ajaxRequest.readyState == 4){
                 var ajaxDisplay = document.getElementById('ajaxDiv');
-                if (ajaxRequest.responseText == 'Logging in...') {
-                    window.location = "home.php";
+				if (ajaxRequest.responseText == 'Registering...') {
+					window.location = "home.php";
 				}
                 else if (ajaxRequest.responseText == 'Accessing quiz...') {
                     window.location = "quiz.php";
@@ -69,13 +68,12 @@
         
         queryString +=  "&password=" + password + "&server=" + server + "&user=" + user + "&pwd=" + pwd + "&dbName=" + dbName;
         
-        ajaxRequest.open("GET", "loginAJAX.php" + queryString, true);
+        ajaxRequest.open("GET", "registerAJAX.php" + queryString, true);
         ajaxRequest.send(null);
         }
-
     </script>
 
-    <div id = 'login'>
+<div id = 'login'>
         <form method="POST" name = "myForm">
             <?php
 
@@ -84,16 +82,17 @@
                 $pwd = 'Memo=munich$Stray';
                 $dbName = "cs329e_bulko_jentang";
             
-                echo "<h2>Welcome back!</h2>";
-                echo "<h5>Please log in below</h5>";
+                echo "<h2>Welcome to Soondu Koreaboo Dramas!</h2>";
+                echo "<h5>Please enter a username and password below</h5>";
                 echo "<label>Username</label><br>";
                 echo "<input class = 'input' type = 'text' id = 'username' size = '30'><br><br>";
                 echo "<label>Password</label><br>";
                 echo "<input class = 'input' type = 'password' id = 'password' size = '30'><br><br>";
                 echo "<div id = 'login_buttons' style='margin-bottom: 50px'>";
-                    echo "<input class='button' type = \"button\" onclick = \"ajaxFunctionLogin('$server','$user','$pwd','$dbName')\" value = \"Login\"/><br><br> ";
-                echo "<p id = 'messages'>Don't have an account with us yet? <a href = 'register.php'>Create one!</a>";
-                echo "<div id = 'ajaxDiv'></div>";
+                    echo "<input class='button' type = \"button\" onclick = \"ajaxFunction('$server','$user','$pwd','$dbName')\" value = \"Register\"/><br><br> ";
+				echo "<div id = 'ajaxDiv'></div>";
+				echo "<p id = 'messages'>Already have an account? <a href = 'login.php'>Log in here!</a>";
+                
             ?>
         </form>
     </div>

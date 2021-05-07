@@ -115,7 +115,7 @@
             <label><h10>Is your favorite show not featured? We would love to hear from you!</h10>
             <br>
             <br>
-            <textarea name = "comments" rows = "20" cols = "80"> Enter your comments here: </textarea>
+            <textarea name = "comments" rows = "20" cols = "80" placeholder = "Enter your comments here..."></textarea>
             </label>
             <br>
             <input type = "submit" value = "Submit"/>

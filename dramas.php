@@ -49,8 +49,8 @@
         <h4 style="clear:both">A-E</h4>
         <table width = "100%">
             <tr>
-                <td><a href = "Info_pages/arthdal.php">Arthdal Chronicles</a></td>
                 <td><a href = "Info_pages/abyss.php">Abyss</a></td>
+                <td><a href = "Info_pages/arthdal.php">Arthdal Chronicles</a></td>
                 <td><a href = "Info_pages/big.php">Big</a></td>
             </tr>
             <tr>
@@ -72,21 +72,19 @@
         <h4 style="clear:both">F-J</h4>
         <table width = "100%">
             <tr>
+                <td><a href = "Info_pages/fight_my_way.php">Fight My Way</a></td>
                 <td><a href = "Info_pages/goblin.php">Goblin</a></td>
-                <td><a href = "Info_pages/healer_info.php">Healer</a></td>
-                <td><a href = "Info_pages/heirs.php">Heirs</a></td>
-                
+                <td><a href = "Info_pages/healer_info.php">Healer</a></td> 
             </tr>
             <tr>
+                <td><a href = "Info_pages/heirs.php">Heirs</a></td>
                 <td><a href = "Info_pages/hospital_playlist_info.php">Hospital Playlist</a></td>
                 <td><a href = "Info_pages/hotel_del_luna.php.">Hotel del Luna</a></td>
-                <td><a href = "Info_pages/itaewon_class_info.php">Itaewon Class</a></td>
-                
             </tr>
             <tr>
+                <td><a href = "Info_pages/itaewon_class_info.php">Itaewon Class</a></td>
                 <td><a href = "Info_pages/its_okay_info.php">It's Okay to Not Be Okay</a></td>
                 <td><a href = "Info_pages/your_voice.php">I Can Hear Your Voice</a></td>
-                <td></td>
             </tr>
         </table>
         <h4 style="clear:both">K-O</h4>
@@ -158,7 +156,7 @@
     
     <footer>
         <hr style:"color=#333;border-top:1px;">
-        <h11>Last Updated: 5/4/2021 by Megan Chu, Jennifer Tang, Kelly Wang, and Laurence Wang</h11>
+        <h11>Last Updated: 5/7/2021 by Megan Chu, Jennifer Tang, Kelly Wang, and Laurence Wang</h11>
     </footer>
 
 </div>

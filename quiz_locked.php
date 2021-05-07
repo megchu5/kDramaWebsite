@@ -23,6 +23,14 @@
     
 <div id = 'content'>
 
+    <script>
+        function quizCookie() {
+            <?php
+                setcookie("quizLogin", "true", time()+(10 * 365 * 24 * 60 * 60), "/");
+            ?>
+        }
+    </script>
+
     <!-- Sidebar -->
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>

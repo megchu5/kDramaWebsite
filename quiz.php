@@ -5,12 +5,11 @@
 <head>
 	<title>Soondu Koreaboo Dramas Quiz</title>
 	<meta charset="UTF-8">
-	<meta name="description" content="What drama should I watch next?">
+	<meta name="description" content="Drama Recommendation Quiz">
 	<meta name="author" content="Jennifer Tang">
 	<link href="home.css" rel="stylesheet">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
-    <script src="quiz_rec.js"></script>
 </head> 
 
 <body>
@@ -317,7 +316,7 @@ RESULTS;
 
     <footer>
         <hr style="color:#333;border-top:1px;">
-        <h11>Last Updated: 5/4/2021 by Megan Chu, Jennifer Tang, Kelly Wang, and Laurence Wang</h11>
+        <h11>Last Updated: 5/7/2021 by Megan Chu, Jennifer Tang, Kelly Wang, and Laurence Wang</h11>
     </footer>
 
 <!-- Sidebar Implementation -->

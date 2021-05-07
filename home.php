@@ -25,6 +25,7 @@
     <?php 
         if (isset($_POST['logout'])) {
             setcookie("loggedin", "true", time()-(10 * 365 * 24 * 60 * 60), "/");
+            setcookie("quizLogin", "true", time()-(10 * 365 * 24 * 60 * 60), "/");
             header("Location: home.php");
         }
     ?>
@@ -138,7 +139,7 @@
                 </div>
             </div>
             <div class = 'container'>
-                <a href="Info_pages/lovestruck_info.php"><img src="KDramas/Romance/Lovestruck.jpeg" alt="Lovestruck in the City" width="200"></a>
+                <a href="Info_pages/lovestruck_info.php"><img src="KDramas/Romance/Lovestruck.jpg" alt="Lovestruck in the City" width="200"></a>
                 <div class = 'middle'>
                     <div class = 'text'>Lovestruck in the City</div>
                 </div>
